@@ -1,0 +1,36 @@
+.hero-container{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-banner{
+  .title{
+    font-size: 46px;
+    font-weight: 600;
+  }
+  .desc{
+    font-size: 18px;
+  }
+  .read-more{
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.slick-dots{
+  li{
+    button{
+      opacity: 0;
+    }
+    background-color: var(--main-gray);
+    height: 8px;
+    width: 10px;
+    border-radius: 10px;
+    transition: ease all .3s;
+    &.slick-active{
+      width: 16px;
+      background-color: var(--active-color);
+    }
+  }
+}

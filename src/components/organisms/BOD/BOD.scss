@@ -1,0 +1,24 @@
+.news{
+    .news-update{
+      padding: 30px;
+      border-radius: 10px;
+      background-color: #FFF;
+      margin-bottom: 20px;
+      .image-wrapper{
+        .image{
+          display: block;
+          margin: 30px auto;
+        }
+      }
+      .header{
+        .name{
+          font-size: 500px;
+          font-weight: bold;
+        }
+        .title{
+            font-size: 14px;
+            font-weight: 200;
+          }
+      }
+    }
+}

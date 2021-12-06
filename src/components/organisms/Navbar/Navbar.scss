@@ -1,0 +1,133 @@
+._navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 130px;
+  height: 160px;;
+  .left {
+    width: 250px;
+    .logo {
+      width: 160px;
+    }
+  }
+  .center {
+    width: 350px;
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+  .isParent {
+    &.collapse {
+      .child-menu {
+        padding: 0;
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        opacity: 0;
+        .item {
+          padding: 0;
+        }
+      }
+    }
+  }
+  .isParent {
+    .child-menu {
+      position: absolute;
+      right: -100px;
+      top: 50px;
+      display: flex;
+      padding: 20px;
+      border: 2px solid var(--main-gray);
+      border-radius: 10px;
+      background-color: #FFF;
+      box-shadow: 10px 10px 29px 0 rgba(0, 0, 0, 0.05);
+      z-index: 1;
+      .arrow-nav{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: -22.4px;
+        right: 120px;
+      }
+      .item {
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        width: 160px;
+        .title {
+          display: block;
+          margin-bottom: 20px;
+          color: var(--main-gray);
+          cursor: text;
+        }
+        .item-link{
+          padding: 5px 0;
+          font-size: 14px;
+          display: flex;
+          .group  {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .menu {
+    color: var(--active-color);
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    .parent-link{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .auth{
+    background-color: var(--inactive-color);
+    color: var(--main-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 28px;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+}
+
+.search {
+  height: 46px;
+  width: 482px;
+  border-radius: 50px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 10px 10px 29px 0 rgba(0, 0, 0, 0.05);
+  .inputSearch {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    height: 100%;
+  }
+}

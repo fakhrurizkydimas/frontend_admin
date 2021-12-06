@@ -1,0 +1,57 @@
+.form-wrapper{
+  .form-search, .result-search{
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .form-search{
+    margin-bottom: 20px;
+    .title{
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--inactive-color);
+      margin-bottom: 20px;
+      display: block;
+    }
+  }
+  .result-search{
+    .title{
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--inactive-color);
+      margin-bottom: 20px;
+      display: block;
+    }
+    .lists{
+      .item-result{
+        .file-name{
+          color: royalblue;
+          font-weight: 600;
+          margin-bottom: 20px;
+          display: block;
+        }
+      }
+    }
+  }
+}
+.form-select,.form-control{
+  &.input-custom{
+    cursor: pointer;
+    border: none;
+    box-shadow: 10px 10px 29px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    height: 45px;
+  }
+}
+.custom-input-date{
+  cursor: pointer;
+  border: none;
+  box-shadow: 10px 10px 29px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  height: 45px;
+  width: 100%;
+  .react-date-picker__wrapper{
+    border: none;
+    outline: none;
+  }
+}

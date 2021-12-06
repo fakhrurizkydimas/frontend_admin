@@ -1,0 +1,38 @@
+.sidebar{
+  position: sticky;
+  top: 50px;
+  margin-bottom: 30px;
+}
+.metismenu{
+  background-color: #fff;
+  list-style: none;
+  padding: 5px 50px;
+  border-radius: 10px;
+  .header-menu{
+    border-bottom: 2px solid var(--main-yellow);
+    box-sizing: content-box;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px;
+    color: var(--inactive-color);
+  }
+  .menu-lists{
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 700;
+    .has-arrow{
+      display: flex;
+      color: var(--active-color);
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+      margin-left: 10px;
+      li{
+        margin: 10px 0;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.auth-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  .authModal {
+    width: 420px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    background-image: url("../../../assets/login-bg-2.png");
+    background-size: cover;
+    border: 2px solid var(--inactive-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .img-auth{
+        width: 200px;
+      }
+      .text-welcome {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    }
+    .form {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        .label {
+          font-weight: 700;
+          font-size: 14px;
+          color: var(--active-color);
+          margin-bottom:5px;
+        }
+        .input-wrapper {
+          border: 1px solid var(--active-color);
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          height: 38px;
+          padding: 0 10px;
+          border-radius: 7px;
+          input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            height: 100%;
+          }
+          .togglePassword {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .btnSign {
+        background-color: var(--inactive-color);
+        color: var(--main-yellow);
+        border: none;
+        outline: none;
+        height: 38px;
+        border-radius: 7px;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+    .closeAuth {
+      position: absolute;
+      cursor: pointer;
+      right: 20px;
+      top: 20px;
+    }
+  }
+}
